@@ -1,5 +1,6 @@
 import Banner from '../components/Banner/banner';
 import React from "react";
+import imgbanner from '../images/imgbanner.png';
 
 
 
@@ -7,7 +8,7 @@ import React from "react";
 function Home (){
     return (
         <>
-        <Banner />       
+        <Banner img = {imgbanner} text = "Chez vous, partout et ailleurs"/>       
        
         </>
 

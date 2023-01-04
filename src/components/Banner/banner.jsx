@@ -1,14 +1,14 @@
 import React from "react";
-import imgBanner from '../../images/imgbanner.png';
+//import imgBanner from '../../images/imgbanner.png';
 import '../Banner/banner.css';
 
 
-function Banner({image, texte}) {
+function Banner(props) {
     return(
         <div className="Section">
-			<img className="banner-img" src={imgBanner} alt="Bannière"/>
+			<img className="banner-img" src={props.img} alt="Bannière"/>
 			<div className="Background"></div>
-			<div className="banner-text">Chez vous, partout et ailleurs</div>
+			<div className="banner-text">{props.text}</div>
             
 			
             
