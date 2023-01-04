@@ -9,13 +9,7 @@ function Banner(props) {
 			<img className="banner-img" src={props.img} alt="Bannière"/>
 			<div className="Background"></div>
 			<div className="banner-text">{props.text}</div>
-            
-			
-            
-            
-			
-			</div>
-        
+        </div> 
     );
 }
 
