@@ -2,6 +2,8 @@
 @import "../components/Nav/nav.css";
 @import "../components/Header/header.css";
 @import "../components/Banner/banner.css";
+@import "../components/Card/card.css";
+@import"../pages/Home.css";
 
 body {
 	font-family: 'Montserrat', sans-serif;

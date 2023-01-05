@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import { Routes, Route } from "react-router-dom";
 import Propos from './pages/Propos';
 import Header from './components/Header/header';
+import Logement from './pages/Logement';
 //import Error from './components/Error/error';
 
  
@@ -17,7 +18,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/Propos" element={<Propos />} />
-				
+						<Route path="/Logement/:id" element={<Logement />} />
 				</Routes>
 				
 				</main>
