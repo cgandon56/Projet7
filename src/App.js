@@ -7,6 +7,7 @@ import Propos from './pages/Propos';
 import Header from './components/Header/header';
 import Logement from './pages/Logement';
 //import Error from './components/Error/error';
+import Footer from './components/Footer/footer';
 
  
 function App() {
@@ -22,6 +23,7 @@ function App() {
 				</Routes>
 				
 				</main>
+				<Footer />
 		</div>
 	);
 }

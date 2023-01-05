@@ -4,6 +4,7 @@ import imgbanner from '../images/imgbanner.png';
 import Card from '../components/Card/card';
 import { Link } from "react-router-dom";
 import {data} from '../datas/data' ;
+//import Footer from '../components/Footer/footer';
 
 
 function Home (){

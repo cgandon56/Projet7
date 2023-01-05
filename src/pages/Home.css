@@ -1,15 +1,15 @@
+
 .Gallery{
     
     border-radius: 25px;
     display: flex;
-    height : auto;
-    width : 100%;
-   
+      width : 100%;
         margin-top: 220px;
     width: 100%;
     background: #F7F7F7;
     border-radius: 25px;
     box-sizing: border-box;
+    
 
 
 }
@@ -19,10 +19,12 @@
         flex-direction: row;	
 width : 100%;
 box-sizing: border-box;
-margin-top : 40px;
+top: 40px;
 justify-content: space-between;
 margin-right : 70px;
 margin-left : 70px;
-height: 2300px;
+height: 2400px;
+position: relative;
+border-radius: 25px;
 
 }

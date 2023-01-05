@@ -1,0 +1,21 @@
+.footer{
+    
+    bottom: 0;
+    width: 100%;
+    background: black;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+
+.logo{
+   position: relative;
+   margin-top : 20px;
+    width: 122px;
+    height: 40px;
+  
+    display: flex;
+}
+

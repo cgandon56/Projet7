@@ -4,6 +4,7 @@
 @import "../components/Banner/banner.css";
 @import "../components/Card/card.css";
 @import"../pages/Home.css";
+@import "../components/Footer/footer.css";
 
 body {
 	font-family: 'Montserrat', sans-serif;
