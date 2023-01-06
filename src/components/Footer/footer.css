@@ -6,9 +6,11 @@
     height: 200px;
     display: flex;
     flex-direction: column;
-  
-    
+  align-items: center;
+    justify-content: center;
 }
+
+
 
 .logo{
    position: relative;
@@ -17,5 +19,9 @@
     height: 40px;
   
     display: flex;
+}
+
+.text{
+    color:white;
 }
 

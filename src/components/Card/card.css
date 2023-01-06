@@ -7,7 +7,12 @@
     display: flex;
     width : 300px;
     height: 270px;
-   
+    transition: 400ms;
+}
+
+.Card:hover {
+    transform: scale(1.05);
+
 }
 
 .pictureCard{

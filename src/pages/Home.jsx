@@ -15,7 +15,7 @@ function Home (){
       <div className="Thumb">
 				{data.map((appart, id) => (
 					<div key={id}>
-						<Link className="link_card_logement" to={`/logement/${appart.id}`}>
+						<Link className="link_card" to={`/logement/${appart.id}`}>
 							<Card cover={appart.cover} title={appart.title} />
 						</Link>
 					</div>
