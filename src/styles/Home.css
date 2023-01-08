@@ -1,0 +1,35 @@
+
+.Gallery{
+    position : relative;
+    border-radius: 25px;
+    display: flex;
+    margin-right : 100px;
+        margin-top: 220px;
+    margin-left: 100px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    flex-direction: column;
+   
+
+
+}
+.Thumb{
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;	
+        margin-right : 30px;
+        margin-left : 30px;
+position : relative ;
+margin-top: 40px;
+margin-bottom : 40px;
+justify-content: space-evenly;
+
+
+
+border-radius: 25px;
+gap: 30px;
+}
+
+
+
+

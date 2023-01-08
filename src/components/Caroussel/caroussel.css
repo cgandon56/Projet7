@@ -1,0 +1,27 @@
+.carousel{
+margin-right : 50px;
+margin-left : 50px;
+    top : 100px;
+    position : relative;  
+ height : 400px ;
+}
+
+.carousel-inner{
+    height : 400px ;
+    border-radius: 20px;
+   
+}
+
+.carousel-item{
+    height : 400px ; 
+    
+    
+}
+
+img{
+    object-fit: cover;
+    height : 400px ;
+}
+
+
+

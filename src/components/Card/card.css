@@ -1,13 +1,16 @@
 
 
 .Card{
-   
+  position : relative ;
     border-radius: 10px;
     height: 100%;
     display: flex;
-    width : 300px;
-    height: 270px;
+    width : 330px;
+    height: 250px;
     transition: 400ms;
+    
+    
+    
 }
 
 .Card:hover {
@@ -19,22 +22,29 @@
     border-radius: 10px;
     height: 100%;
     object-fit: cover;
-   
+    filter: brightness(0.7);
     width: inherit;
     cursor: pointer;
+   
+   
 }
 
 
 .cardTitle{
-    
+    position : absolute;
             bottom: 0px;
             text-align: start;
-            margin-bottom: 20px;
+            
             margin-left: 20px;
             font-weight: 500;
             color: white;
             
             size: 18px;
+}
+
+.Title{
+    font-weight: 500;
+    
 }
 
 

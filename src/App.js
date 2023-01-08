@@ -1,5 +1,5 @@
 import React from 'react';
-//import Banner from './components/Banner/banner';
+
 import './styles/index.css';
 import Home from './pages/Home';
 import { Routes, Route } from "react-router-dom";
@@ -9,10 +9,13 @@ import Logement from './pages/Logement';
 //import Error from './components/Error/error';
 import Footer from './components/Footer/footer';
 
+
  
 function App() {
 	return (
 		<div className="App">
+			
+			<body>
 			<Header />
         
 				<main>
@@ -24,6 +27,7 @@ function App() {
 				
 				</main>
 				<Footer />
+				</body>
 		</div>
 	);
 }

@@ -1,24 +1,16 @@
-.nav_header{
-position: absolute;
-left: 75.08%;
-right: 0%;
-top: 25%;
-bottom: 25%;
-
+.nav_header{  
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    gap : 60px;
 }
 
 .nav_header_link_home{
-    position: absolute;
 
-right: 70%;
-top: 25%;
-bottom: 25%;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
 
 display: flex;
 align-items: flex-end;
@@ -26,10 +18,12 @@ text-align: right;
 
 text-decoration:none;
 color: #FF6060;
+border-bottom: transparent solid 3px ;
+
 }
 
 .nav_header_link_about{
-position: absolute;
+
 right: 0%;
 top: 25%;
 bottom: 25%;
@@ -38,15 +32,23 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
-line-height: 142.6%;
 /* or 34px */
 
 display: flex;
 align-items: flex-end;
 text-align: right;
-
+border-bottom: transparent solid 3px ;
 color: #FF6060;
 }
+
+.nav_header :hover{
+    border-bottom: #FF6060 solid 3px ;
+}
+
+
+
+
+
 
 
 
