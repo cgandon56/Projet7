@@ -12,15 +12,17 @@ function Home (){
       <>
       <Banner img = {imgbanner} text = "Chez vous, partout et ailleurs"/>  
       <div className="Gallery">
-      <div className="Thumb">
+      <article className="Thumb">
 				{data.map((appart, id) => (
-					<div key={id}>
-						<Link className="link_card" to={`/logement/${appart.id}`}>
+					
+						<Link className="link_Thumb" key= {id} to={`/logement/${appart.id}`}>
 							<Card cover={appart.cover} title={appart.title} />
 						</Link>
-					</div>
+            
+				
 				))}
-			</div>
+        </article>
+		
       </div>
       
       </>

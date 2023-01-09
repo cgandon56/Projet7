@@ -8,12 +8,12 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function NoTransitionExample() {
   return (
-    <Carousel slide={false}>
-      {data.map(slide=>(
-      <Carousel.Item key={slide.id}>
+    <Carousel slide={false}> 
+      {data.map((id)=>(
+      <Carousel.Item key={id}>
         <img
           className="d-block w-100"
-          src={slide.pictures}
+          src={id.pictures}
           alt="First slide"
         />
         
@@ -35,32 +35,26 @@ export default NoTransitionExample;
 /*
 function Caroussel() {
     
-    {data.map((logement)=>{
+  <div className={classes.carousel_wrapper} ref={carouselRef}>
+      {props.pictures.length > 1 && (
+        <ArrowLeft
+          className={classes.carousel_arrowLeft}
+          onClick={() => handleClickPrevious()}
+        />
+      )}
 
-    return (
-<Carousel slide={false}>
-<Carousel.Item key={logement.id}>
-        <img className="d-block w-100">{logement.pictures}</img>
-        <p className ='test'>test3</p>
-      
-          </Carousel.Item>
+      {props.pictures.map((picture, i) => (
+        <img
+          key={`picture-${i + 1}`}
+          src={picture}
+          alt="accomodations"
+          style={{
+            left: `${width * (i - (position - 1))}px`,
+            transition: `left ${transitionTime}s ease-in-out`,
+          }}
+        />
+      ))}
 
- 
-            </Carousel>
-    )})}}
-
-   
-   
-
- 
-export default Caroussel;
-
-//faire le map ici
-
-/*
-{data.map((appart, id) => (
-    <div key={id}>
-        <Link className="link_card" to={`/logement/${appart.id}`}>
-            <Card cover={appart.cover} title={appart.title} />
-        </Link>
-    </div>*/
+      <p className={classes.carousel_counter}>
+        {position}/{props.pictures.length}
+      </p>*/

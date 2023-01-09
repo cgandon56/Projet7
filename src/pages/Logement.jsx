@@ -4,10 +4,10 @@ import Caroussel from '../components/Caroussel/caroussel';
 
 function Logement(){
     return(
-        <div>
+      
         
         <Caroussel />
-        </div>
+       
            
     )
 }
