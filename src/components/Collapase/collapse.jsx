@@ -1,7 +1,10 @@
 import { Accordion } from 'react-bootstrap-accordion'
 import React, { useState } from 'react';
+import Card from 'react-bootstrap/Card';
+//import Button from 'react-bootstrap/Button';
 
-let renderCount = 0;
+
+
 
 function Collapse() {
   const [items, setItems] = useState([1, 2, 3, 4]);
@@ -13,6 +16,7 @@ function Collapse() {
         <div className="accordion" id="accordionExample">
             { items.map((item, i) => {
                 return (
+                  
                 <div className="accordion-item" key={i}>
                     <h2 className="accordion-header" id="headingOne">
                       <button className="accordion-button" type="button" 
@@ -27,6 +31,7 @@ function Collapse() {
                       </div>
                     </div>
                 </div>
+               
                 )
             }) }
         </div>
