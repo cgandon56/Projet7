@@ -6,8 +6,9 @@
 @import"./Home.css";
 @import "../components/Footer/footer.css";
 @import "../components/Caroussel/caroussel.css";
-@import  'bootstrap/dist/css/bootstrap.min.css' ;
+/*@import  'bootstrap/dist/css/bootstrap.min.css' ;*/
 @import "./propos.css";
+@import "../components/Collapse/collapse.css";
 
 
 
