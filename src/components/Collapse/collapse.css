@@ -1,5 +1,6 @@
 .accordion-item{
     background: #F7F7F7;
+    margin-bottom: 20px;
    
 }
 
@@ -10,6 +11,30 @@
 .accordion-button.collapsed {
     background: #FF6060;
     color : white;
+    
   }
+
+  .accordion-button:not(.collapsed) {
+    color: white;
+    background-color:  #FF6060;
+  }
+
+  .accordion-button:focus {
+       border-color: transparent;
+    outline: 0;
+    box-shadow: none ;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url(../../images/Vector.svg);
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-active-icon: url(../../images/Vector.svg);
+   
+    
+}
+
+
+
+
 
   

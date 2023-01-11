@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 function Collapse(props) {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion>
       <Accordion.Item    eventKey="0">
         <Accordion.Header  >{props.title}</Accordion.Header>
         <Accordion.Body>

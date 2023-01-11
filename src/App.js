@@ -6,8 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Propos from './pages/Propos';
 import Header from './components/Header/header';
 import Logement from './pages/Logement';
-//import Error from './components/Error/error';
 import Footer from './components/Footer/footer';
+import Error from './pages/Error';
 
 
  
@@ -16,17 +16,22 @@ function App() {
 		<div className="App">
 			
 			<body>
-			<Header />
-        
+			
+			
 				<main>
+				
 					<Routes>
+					
 						<Route path="/" element={<Home />} />
 						<Route path="/Propos" element={<Propos />} />
 						<Route path="/Logement/:id" element={<Logement />} />
+						<Route path="*" element={<Error />} />
 				</Routes>
 				
 				</main>
-				<Footer />
+				
+				
+				
 				</body>
 		</div>
 	);
