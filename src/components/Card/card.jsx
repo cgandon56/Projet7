@@ -10,8 +10,11 @@ return (
     
             <div className = 'Card'>
             <img className ="pictureCard" src={props.cover} alt="location" />
-            <div className = "cardTitle">
+            <div className = "pictureTitle">
             <p className = "Title" >{props.title}</p>
+            </div>
+            <div className = "rectangle">
+            
                 </div>
                 </div>
                 

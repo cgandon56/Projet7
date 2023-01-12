@@ -1,20 +1,21 @@
 import React from "react";
 //import carousel from "react-responsive-carousel";
-import data from '../../datas/data.json' ;
+import Pictures from '../../datas/data.json' ;
 //import { useState } from "react";
 
 import Carousel from 'react-bootstrap/Carousel';
 
 
 
-function NoTransitionExample() {
+function Caroussel() {
+
   return (
     <Carousel slide={false}> 
-      {data.map((slide, slideIndex)=>(
-      <Carousel.Item key={slideIndex}>
+      {Pictures.map((data)=>(
+      <Carousel.Item key={data.id}>
         <img
           className="d-block w-100"
-          src={slide.pictures}
+          src={data.pictures}
           alt="First slide"
         />
         
@@ -24,7 +25,7 @@ function NoTransitionExample() {
   );
 }
 
-export default NoTransitionExample;
+export default Caroussel;
 
 
 

@@ -9,16 +9,17 @@
 /*@import  'bootstrap/dist/css/bootstrap.min.css' ;*/
 @import "./propos.css";
 @import "../components/Collapse/collapse.css";
+@import "../components/Error/errorPage.css";
+@import "./Logement.css";
 
 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family : source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 body {
-  
   font-family: 'Montserrat', sans-serif;
 	margin: auto;
 }

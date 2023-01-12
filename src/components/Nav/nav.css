@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     margin-right: 100px;
     gap : 60px;
+    Top : 1O0px;
 }
 
 .nav_header_link_home{
 
-font-family: 'Montserrat';
+
 font-style: normal;
 font-weight: 500;
 font-size: 24px;

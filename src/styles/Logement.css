@@ -1,0 +1,18 @@
+.container_Description{
+    margin-top:10px;
+}
+
+.Accordion_Lodging{
+    display: flex;
+    flex-direction: wrap;
+    gap : 20px;
+    margin-top:50px;
+}
+
+.Accordion_Lodging_Description{
+    width : 582px;
+}
+
+.Accordion_Lodging_Equipments{
+    width : 582px ;
+}

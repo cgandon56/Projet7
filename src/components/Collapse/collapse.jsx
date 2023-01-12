@@ -1,9 +1,4 @@
 import Accordion from 'react-bootstrap/Accordion';
-import React, { useState } from 'react';
-
-
-
-
 
 function Collapse(props) {
   return (

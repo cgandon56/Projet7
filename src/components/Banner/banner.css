@@ -1,13 +1,15 @@
 .Section_banner{
   position: relative;
 
-height: 300px;
-top: 150px;
+
+  top: 80px;
 margin-right: 100px;
 margin-left : 100px;
 border-radius: 25px;
 
 overflow: hidden;
+
+height:223px;
 }
 
 

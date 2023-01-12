@@ -1,3 +1,35 @@
-.ErrorText{
-    margin-top : 500px;
+.messageError{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: #FF6060;
+    
+    }
+
+    .errorNumber{
+        font-weight: 700;
+font-size: 288px;
+line-height: 10%;
+margin-top : 50px;
+line-height: 142.6%;
+display: flex;
+
+    }
+
+    a {
+        color: #FF6060; 
+    }
+
+.return{
+    display: flex;
+    align-items: flex-end; 
+    font-size: 18px; 
+    line-height: 142.6%;
+    margin-top : 100px;
+}
+
+.linkHome{
+    text-decoration: none;
+    
 }
