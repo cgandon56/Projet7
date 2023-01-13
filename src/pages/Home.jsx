@@ -35,28 +35,5 @@ function Home (){
 }
 export default Home;
 
-/*
-{products.map((product) => {
-          return (
-            <article key={product.id}>
-              <Link to={`/products/${product.id}`}>
-                <Thumbnails image={product.cover} title={product.title} />
-                
-                {data.map((location) => (
-                <div className = 'Card' key={`${location.title}-${location.id}`}><img className ="pictureCard" src={`${location.cover}`}></img></div>
-            )
-            )}
-
-
-            {data.map((location) => {
-          return (
-      <article key={location.id}>
-              <Link to={`/data/${location.id}`}>
-                <Card image={location.cover} title={location.title} />
-              </Link>
-            </article>      
-    );
-  })}
-                */
 
 

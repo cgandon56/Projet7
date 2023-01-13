@@ -1,0 +1,13 @@
+.tag{
+    display: flex;
+    background: #FF6060;
+    border-radius: 10px;
+    width : 150px; 
+    justify-content: center;
+    Height : 25px ;
+  }
+
+.tag_Title{
+    color : #FFFFFF;
+    font-size : 14px;
+   }

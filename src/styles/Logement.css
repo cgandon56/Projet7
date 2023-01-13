@@ -1,5 +1,33 @@
-.container_Description{
-    margin-top:10px;
+.container_Lodging{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;  
+}
+
+.lodging_Content_Left{
+    display: flex;
+    flex-direction: column;
+    width : 700px; 
+    color: #FF6060;
+}
+
+.lodging_title{
+   font-size: 36px; 
+   font-weight: 500;
+   line-height: 142.6%;
+}
+
+.lodging_location{
+    font-size: 18px; 
+    font-weight: 500;
+    line-height: 142.6%;
+ }
+
+ .lodging_tags{
+    display: flex;
+    flex-direction: wrap; 
+    flex-wrap: wrap;
+    gap : 20px;;
 }
 
 .Accordion_Lodging{
