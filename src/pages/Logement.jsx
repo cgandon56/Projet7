@@ -1,5 +1,5 @@
 import React from 'react';
-import Caroussel from '../components/Caroussel/caroussel';
+import HomeCarousel from '../components/Caroussel/caroussel';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/footer';
 import Collapse from '../components/Collapse/collapse';
@@ -11,8 +11,10 @@ import { Navigate } from "react-router-dom";
 
 function Logement(){
     const { id } = useParams();
-    
     const lodging = data.find((lodging) => lodging.id === id);
+    const equipementsLogement = lodging.equipments.map((equipment, index) => {
+        return <li key={index}>{equipment}</li>
+    })
     
   if (!lodging) {
     return <Navigate to="/error" />
@@ -21,7 +23,7 @@ function Logement(){
         <>
         <Header />
         <div className ="container">
-        <Caroussel img={lodging.pictures}/>
+        <HomeCarousel img={lodging.pictures}/>
         </div>
         <div className ="container_Lodging">
             <div className ="lodging_Content_Left">
@@ -44,7 +46,7 @@ function Logement(){
                     <Collapse title = "Description" description ={lodging.description} />
                 </div>
                 <div className="Accordion_Lodging_Equipments" >
-                    <Collapse title ="Equipements" description ={lodging.equipments}  />
+                    <Collapse title ="Equipements" description ={equipementsLogement }  />
                 </div>
                    
         </div>

@@ -7,6 +7,11 @@
     color :  #FF6060
 }
 
+.accordion_body_list{
+  display: flex;
+  flex-direction: column;
+}
+
 .accordion-button.collapsed {
     background: #FF6060;
     color : white;
