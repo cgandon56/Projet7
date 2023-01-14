@@ -4,12 +4,10 @@
     Height :     68px ;
     flex-wrap: wrap;
     margin-top : 40px;
-       }
+}
 
 .header_logo{
     display: flex;
-	padding-left : 100px;
-   
 }
 
 

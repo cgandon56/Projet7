@@ -4,9 +4,9 @@ import './styles/index.css';
 import Home from './pages/Home';
 import { Routes, Route } from "react-router-dom";
 import Propos from './pages/Propos';
-import Header from './components/Header/header';
+//import Header from './components/Header/header';
 import Logement from './pages/Logement';
-import Footer from './components/Footer/footer';
+//import Footer from './components/Footer/footer';
 import Error from './pages/Error';
 
 
@@ -14,25 +14,17 @@ import Error from './pages/Error';
 function App() {
 	return (
 		<div className="App">
-			
 			<body>
-			
-			
 				<main>
-				
 					<Routes>
-					
 						<Route path="/" element={<Home />} />
-						<Route path="/Propos" element={<Propos />} />
-						<Route path="/Logement/:id" element={<Logement />} />
+						<Route path="/propos" element={<Propos />} />
+						<Route path="/logement/:id" element={<Logement />} />
 						<Route path="*" element={<Error />} />
-				</Routes>
-				
+						<Route path="/error" element={<Error />} />
+					</Routes>
 				</main>
-				
-				
-				
-				</body>
+			</body>
 		</div>
 	);
 }

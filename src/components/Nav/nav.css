@@ -1,8 +1,7 @@
 .nav_header{  
     display: flex;
     flex-wrap: wrap;
-    margin-right: 100px;
-    gap : 60px;
+      gap : 60px;
     Top : 1O0px;
 }
 

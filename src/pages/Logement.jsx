@@ -1,21 +1,27 @@
 import React from 'react';
-import Carousel from '../components/Caroussel/caroussel';
+import Caroussel from '../components/Caroussel/caroussel';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/footer';
 import Collapse from '../components/Collapse/collapse';
 import { useParams } from "react-router-dom";
 import data from '../datas/data' ;
-import Tag from "../components/Tag/tag"
+import Tag from "../components/Tag/tag";
+import Rate from "../components/Rate/rate";
+import { Navigate } from "react-router-dom";
 
 function Logement(){
     const { id } = useParams();
+    
     const lodging = data.find((lodging) => lodging.id === id);
     
+  if (!lodging) {
+    return <Navigate to="/error" />
+  }
     return(
         <>
         <Header />
-        <div className ="container py-4">
-        <Carousel images={lodging.pictures} />
+        <div className ="container">
+        <Caroussel img={lodging.pictures}/>
         </div>
         <div className ="container_Lodging">
             <div className ="lodging_Content_Left">
@@ -52,7 +58,9 @@ function Logement(){
 
 export default Logement;
 
-
-
+/*
+<div className ="container">
+        <Caroussel img= {lodging.pictures} />
+        </div>*/
 
 

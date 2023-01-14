@@ -3,13 +3,9 @@
     height: 100%;
     display: flex;
     Width : 240px;
-Height : 240px ;
+    Height : 240px ;
     transition: 400ms;
-    position: relative;
-
- 
-
-    
+    position: relative; 
 }
 
 .Card:hover {
