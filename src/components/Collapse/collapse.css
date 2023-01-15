@@ -4,12 +4,8 @@
 }
 
 .accordion-body{
-    color :  #FF6060
-}
-
-.accordion_body_list{
-  display: flex;
-  flex-direction: column;
+    color :  #FF6060 ;
+    height : 170px ;
 }
 
 .accordion-button.collapsed {

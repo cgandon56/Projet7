@@ -1,59 +1,53 @@
 import React from 'react';
-import HomeCarousel from '../components/Caroussel/caroussel';
-import Header from '../components/Header/header';
-import Footer from '../components/Footer/footer';
+import Caroussel from '../components/Caroussel/caroussel';
+//import Header from '../components/Header/header';
+//import Footer from '../components/Footer/footer';
 import Collapse from '../components/Collapse/collapse';
 import { useParams } from "react-router-dom";
 import data from '../datas/data' ;
 import Tag from "../components/Tag/tag";
-import Rate from "../components/Rate/rate";
+import Host from "../components/Host/host" ;
+//import Rate from "../components/Rate/rate";
 import { Navigate } from "react-router-dom";
+
 
 function Logement(){
     const { id } = useParams();
     const lodging = data.find((lodging) => lodging.id === id);
-    const equipementsLogement = lodging.equipments.map((equipment, index) => {
+      const equipmentsLodging = lodging.equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
     })
-    
-  if (!lodging) {
-    return <Navigate to="/error" />
-  }
+    if (!lodging) {
+        return <Navigate replace to="/error" />
+      }
     return(
         <>
-        <Header />
-        <div className ="container">
-        <HomeCarousel img={lodging.pictures}/>
-        </div>
+                
+        <Caroussel/>
+        
         <div className ="container_Lodging">
             <div className ="lodging_Content_Left">
                 <h1 className ="lodging_title">{lodging.title}</h1>
                 <p className ="lodging_location">{lodging.location}</p>
-                
                 <div className="lodging_tags">
                 {lodging.tags.map((tag, index) => (
                 <Tag key={index} tag={tag} />
                 ))}
                 </div>
             </div>
-            <div className ="Lodging-Content_Right">
-                <div className = "host">test</div>
+            <div className ="lodging-Content_Right">
+                <Host hostname ={lodging.host.name} hostpicture={lodging.host.picture}/>
                 <div className="rating" >test</div>          
             </div>
         </div>
-        <div className ="Accordion_Lodging">
-                <div className="Accordion_Lodging_Description">
+        <div className ="accordion_Lodging">
+                <div className="accordion_Lodging_Description">
                     <Collapse title = "Description" description ={lodging.description} />
                 </div>
-                <div className="Accordion_Lodging_Equipments" >
-                    <Collapse title ="Equipements" description ={equipementsLogement }  />
-                </div>
-                   
-        </div>
-       
-        
-        
-       <Footer />  
+                <div className="accordion_Lodging_Equipments" >
+                    <Collapse title ="Equipements" description ={equipmentsLodging}    />
+                </div>      
+        </div> 
        </>  
     )
 }

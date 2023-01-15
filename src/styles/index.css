@@ -12,6 +12,7 @@
 @import "../components/Error/errorPage.css";
 @import "./Logement.css";
 @import "../components/Tag/tag.css";
+@import "../components/Host/host.css";
 
 
 
@@ -25,4 +26,6 @@ body {
 	margin: auto;
   width : 1240px
 }
+
+
 

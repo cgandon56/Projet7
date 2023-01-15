@@ -4,8 +4,8 @@ import imgbanner from '../images/imgbanner.png';
 import Card from '../components/Card/card';
 import { Link } from "react-router-dom";
 import data from '../datas/data' ;
-import Header from '../components/Header/header';
-import Footer from '../components/Footer/footer';
+//import Header from '../components/Header/header';
+//import Footer from '../components/Footer/footer';
 
 //import Footer from '../components/Footer/footer';
 
@@ -13,7 +13,7 @@ import Footer from '../components/Footer/footer';
 function Home (){
   return (
       <>
-      <Header />
+      
       <Banner img = {imgbanner} text = "Chez vous, partout et ailleurs"/>  
       <div className="Gallery">
       <article className="Thumb">
@@ -28,7 +28,7 @@ function Home (){
         </article>
 		
       </div>
-      <Footer />
+     
       </>
 
 )

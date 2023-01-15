@@ -4,9 +4,9 @@ import './styles/index.css';
 import Home from './pages/Home';
 import { Routes, Route } from "react-router-dom";
 import Propos from './pages/Propos';
-//import Header from './components/Header/header';
+import Header from './components/Header/header';
 import Logement from './pages/Logement';
-//import Footer from './components/Footer/footer';
+import Footer from './components/Footer/footer';
 import Error from './pages/Error';
 
 
@@ -15,6 +15,7 @@ function App() {
 	return (
 		<div className="App">
 			<body>
+			<Header />
 				<main>
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -24,6 +25,7 @@ function App() {
 						<Route path="/error" element={<Error />} />
 					</Routes>
 				</main>
+				<Footer />
 			</body>
 		</div>
 	);
