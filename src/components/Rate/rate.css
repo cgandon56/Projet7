@@ -1,0 +1,10 @@
+.rating{
+    display: flex;
+    justify-content: flex-end;
+    margin-top : 3px;
+}
+
+.rating_Icon{
+    Width :30px ;
+    Height : 30px ;
+}

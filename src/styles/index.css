@@ -6,13 +6,13 @@
 @import"./Home.css";
 @import "../components/Footer/footer.css";
 @import "../components/Caroussel/caroussel.css";
-/*@import  'bootstrap/dist/css/bootstrap.min.css' ;*/
 @import "./propos.css";
 @import "../components/Collapse/collapse.css";
 @import "../components/Error/errorPage.css";
 @import "./Logement.css";
 @import "../components/Tag/tag.css";
 @import "../components/Host/host.css";
+@import"../components/Rate/rate.css";
 
 
 
@@ -25,6 +25,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 	margin: auto;
   width : 1240px
+}
+
+.footer{
+  width : 1440 px;
 }
 
 

@@ -7,18 +7,18 @@ import { useParams } from "react-router-dom";
 import data from '../datas/data' ;
 import Tag from "../components/Tag/tag";
 import Host from "../components/Host/host" ;
-//import Rate from "../components/Rate/rate";
+import Rate from "../components/Rate/rate";
 import { Navigate } from "react-router-dom";
 
 
 function Logement(){
     const { id } = useParams();
     const lodging = data.find((lodging) => lodging.id === id);
-      const equipmentsLodging = lodging.equipments.map((equipment, index) => {
+    const equipmentsLodging = lodging.equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
     })
     if (!lodging) {
-        return <Navigate replace to="/error" />
+        return <Navigate to="/error" replace />
       }
     return(
         <>
@@ -37,7 +37,7 @@ function Logement(){
             </div>
             <div className ="lodging-Content_Right">
                 <Host hostname ={lodging.host.name} hostpicture={lodging.host.picture}/>
-                <div className="rating" >test</div>          
+                <Rate evaluation={lodging.rating} />          
             </div>
         </div>
         <div className ="accordion_Lodging">

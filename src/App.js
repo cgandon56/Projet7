@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { BrowserRouter } from "react-router-dom";
 import './styles/index.css';
 import Home from './pages/Home';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Propos from './pages/Propos';
 import Header from './components/Header/header';
 import Logement from './pages/Logement';
@@ -13,8 +13,8 @@ import Error from './pages/Error';
  
 function App() {
 	return (
-		<div className="App">
-			<body>
+		
+		<BrowserRouter>
 			<Header />
 				<main>
 					<Routes>
@@ -22,12 +22,12 @@ function App() {
 						<Route path="/propos" element={<Propos />} />
 						<Route path="/logement/:id" element={<Logement />} />
 						<Route path="*" element={<Error />} />
-						<Route path="/error" element={<Error />} />
+						<Route path ="/error" element={<Error />} />
 					</Routes>
 				</main>
-				<Footer />
-			</body>
-		</div>
+			<Footer />
+		</BrowserRouter>
+		
 	);
 }
 
