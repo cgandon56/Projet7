@@ -7,6 +7,8 @@
     align-items: center;
     box-sizing: border-box; 
     justify-content: center; 
+    position : absolute ;
+    width : 100%;
 }
 
 .logo{
@@ -16,12 +18,22 @@
     display: flex;
 }
 
+.footer_Content{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
 
-
-.textFooter{
+.footer_Text{
     margin-top : 40px;
     font-Size : 24px;
     color:white;
-    font-Weight : 500;   
+    font-Weight : 500; 
+}
+
+@media screen and (max-width: 767px) {
+    .footer_Text{
+        font-Size : 12px;
+    } 
 }
 

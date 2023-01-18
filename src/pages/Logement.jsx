@@ -13,13 +13,15 @@ import { Navigate } from "react-router-dom";
 
 function Logement(){
     const { id } = useParams();
+    //const navigate = useNavigate();
     const lodging = data.find((lodging) => lodging.id === id);
+    if (!lodging) { 
+        return <Navigate to="/error" replace />
+      }
     const equipmentsLodging = lodging.equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
     })
-    if (!lodging) {
-        return <Navigate to="/error" replace />
-      }
+    
     return(
         <>
                 
@@ -48,6 +50,7 @@ function Logement(){
                     <Collapse title ="Equipements" description ={equipmentsLodging}    />
                 </div>      
         </div> 
+        
        </>  
     )
 }

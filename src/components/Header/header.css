@@ -1,20 +1,37 @@
 .headerWrap{
     display: flex;
     justify-content: space-between;
-    Height :     68px ;
+    Height : 68px ;
     flex-wrap: wrap;
     margin-top : 40px;
 }
-
-.header_logo{
-    display: flex;
-}
-
 
 .logoHeader{
     height: 68px;
 }
 
+/* Format mobile 768px */
+@media screen and (max-width: 767px) {
+.headerWrap{
+    height: 47px;
+    margin-top: 20px;
+}
+.logoHeader{
+    margin-left: 20px;
+    Height : 47px ;
+}
+}
+
+@media all and (min-width : 768px) {
+    .headerWrap{
+        height: 47px;
+        margin-top: 20px;
+    }
+    .logoHeader{
+        margin-left: 20px;
+        Height : 47px ;
+    }
+}
 
 
 

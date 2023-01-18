@@ -31,6 +31,20 @@
     --bs-accordion-btn-active-icon: url(../../images/Vector.svg);  
 }
 
+@media screen and (max-width: 767px) {
+  .accordion-button.collapsed {
+    height : 30px ;
+    font-size : 13px;
+  }
+  .accordion-button:not(.collapsed) {
+    font-size : 13px;
+    height : 30px ;
+  }
+  .accordion {
+  --bs-accordion-btn-icon-width: 13px;
+  }
+}
+
 
 
 

@@ -22,10 +22,13 @@ function App() {
 						<Route path="/propos" element={<Propos />} />
 						<Route path="/logement/:id" element={<Logement />} />
 						<Route path="*" element={<Error />} />
-						<Route path ="/error" element={<Error />} />
+						<Route path ="/error" element={<Error />}/>
+						
 					</Routes>
+					<Footer />
 				</main>
-			<Footer />
+				
+			
 		</BrowserRouter>
 		
 	);

@@ -23,13 +23,48 @@ code {
 
 body {
   font-family: 'Montserrat', sans-serif;
-	margin: auto;
-  width : 1240px
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 209px; 
 }
 
-.footer{
-  width : 1440 px;
+html{
+  position: relative; /* important*/
+  margin :auto;
 }
+
+#root {
+  margin :0;
+}
+
+main{
+  min-height : 100%;
+  margin :0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

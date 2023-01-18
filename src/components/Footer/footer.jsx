@@ -6,10 +6,10 @@ function Footer() {
 		<footer className="footer">
 			
 				<img className="logo" src={logo} alt="logo de l'agence kasa" />
+				<div className = "footer_Content">
 				
-				
-				<p className="textFooter">© 2023 Kasa. All rights reserved</p>
-				
+				<p className="footer_Text">© 2023 Kasa. All rights reserved</p>
+				</div>
 				
 			
 		</footer>
