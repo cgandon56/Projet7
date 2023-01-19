@@ -22,10 +22,14 @@ function Logement(){
         return <li key={index}>{equipment}</li>
     })
     
+    
     return(
         <>
-                
-        <Caroussel/>
+
+         
+                <Caroussel figures={lodging.pictures}/>
+              
+       
         
         <div className ="container_Lodging">
             <div className ="lodging_Content_Left">

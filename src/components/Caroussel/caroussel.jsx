@@ -1,28 +1,59 @@
 
 import React from "react";
-//import { Carousel } from "react-responsive-carousel";
-//import { useState } from "react";
-import data from "../../datas/data.json";
 import Carousel from 'react-bootstrap/Carousel';
 
-function Caroussel() {
-  return (
-    <Carousel interval={null} >
-     
-     
-      <Carousel.Item >
-        <img 
-          className="d-block w-100"
-          src= "https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg"
-          alt="First slide"
-                />
-              </Carousel.Item>
-           
 
-   
-      
-    </Carousel>
+
+function Caroussel ({figures}) {
+  return (
+    
+        <Carousel interval={null} >  {
+          figures.map((figure, index) => {
+            return (
+              <Carousel.Item key={index} >
+              
+              <img 
+              className="d-block w-100"
+              src= {figure}
+              alt="First slide"
+              />
+             
+            </Carousel.Item>
+            )
+          })
+        }  
+        </Carousel>
+  
   );
 }
 
 export default Caroussel;
+
+
+/*
+function Caroussel ({figures}) {
+  return (
+    <section className="caroussel_Block">
+      <container fluid>
+        <Carousel interval={null} >  {
+          figures.map((figure, index) => {
+            return (
+              <Carousel.Item key={index} >
+              <blockquote>
+              <img 
+              className="d-block w-100"
+              src= {figure}
+              alt="First slide"
+              />
+              </blockquote>
+            </Carousel.Item>
+            )
+          })
+        }  
+        </Carousel>
+    </container>
+  </section> 
+  );
+}
+
+export default Caroussel;*/
