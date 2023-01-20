@@ -8,3 +8,10 @@
     Width :30px ;
     Height : 30px ;
 }
+
+@media screen and (max-width: 767px) {
+    .rating_Icon{
+        Width :15px ;
+        Height : 15px ;
+    } 
+}

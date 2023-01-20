@@ -1,7 +1,7 @@
-.nav_header{  
+.nav_Header{  
     display: flex;
     flex-wrap: wrap;
-    gap : 60px;
+    gap : 180px;
     Top : 10px;
 }
 
@@ -32,32 +32,34 @@
   color: #FF6060;
 }
 
-.nav_header :hover{
+.nav_Header :hover{
     border-bottom: #FF6060 solid 3px ;
+    color: #FF6060;
 }
 
+
 @media screen and (max-width: 767px) {
-.nav_header{
-  top : 20px;
-  margin-right : 20px;
-  gap : 20px;
+  .nav_Header{
+    top : 20px;
+    margin-right : 20px;
+    gap : 20px;
   }
   .nav_header_link_home{
     font-size: 12px;
 }
-.nav_header_link_about{
-  font-size: 12px;
+  .nav_header_link_about{
+    font-size: 12px;
 }
 }
 
-
+/*
 @media all and (min-width : 768px) {
   .nav_header{
     top : 20px;
     margin-right : 20px;
     gap : 20px;
     } 
-}
+}*/
  
 
 

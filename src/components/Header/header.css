@@ -22,16 +22,7 @@
 }
 }
 
-@media all and (min-width : 768px) {
-    .headerWrap{
-        height: 47px;
-        margin-top: 20px;
-    }
-    .logoHeader{
-        margin-left: 20px;
-        Height : 47px ;
-    }
-}
+
 
 
 

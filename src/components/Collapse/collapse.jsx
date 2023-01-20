@@ -1,5 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
-import data from "../../datas/data.json";
+
 
 function Collapse(props) {
   return (

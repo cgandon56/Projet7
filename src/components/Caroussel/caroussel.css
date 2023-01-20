@@ -1,6 +1,6 @@
 .carousel{
     height: 415px;
-    top : 100px;
+    top : 30px;
 }
 
 img.d-block{
@@ -11,10 +11,39 @@ img.d-block{
 .carousel-inner{
     height : 100%; 
     border-radius: 25px; 
-   }
+}
 
 .carousel-item{
     height : 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../../images/back.svg);
+    height : 80px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../../images/forward.svg);
+    height : 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel{
+        height: 255px;
+        margin-right: 20px;
+        margin-left: 20px;
+    } 
+
+    .carousel-inner{
+        border-radius: 10px; 
+    }
+    .carousel-control-prev-icon {
+        height : 20px;
+    }
+    
+    .carousel-control-next-icon {
+        height : 20px;
+    }
 }
 
 

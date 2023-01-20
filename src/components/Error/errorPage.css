@@ -1,25 +1,22 @@
-.messageError{
+.message_Error{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     color: #FF6060;
-    
-    }
+}
 
-    .errorNumber{
-        font-weight: 700;
-font-size: 288px;
-line-height: 10%;
-margin-top : 50px;
-line-height: 142.6%;
-display: flex;
+.error_Number{
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 10%;
+    margin-top : 50px;
+    line-height: 142.6%;
+    display: flex;
+}
 
-    }
-
-    a {
-        color: #FF6060; 
-    }
+a {
+    color: #FF6060; 
+}
 
 .return{
     display: flex;
@@ -29,7 +26,6 @@ display: flex;
     margin-top : 100px;
 }
 
-.linkHome{
-    text-decoration: none;
-    
+.link_Home{
+    text-decoration: none;  
 }

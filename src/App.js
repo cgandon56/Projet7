@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import './styles/index.css';
 import Home from './pages/Home';
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Propos from './pages/Propos';
 import Header from './components/Header/header';
 import Logement from './pages/Logement';
@@ -13,7 +13,6 @@ import Error from './pages/Error';
  
 function App() {
 	return (
-		
 		<BrowserRouter>
 			<Header />
 				<main>
@@ -22,15 +21,11 @@ function App() {
 						<Route path="/propos" element={<Propos />} />
 						<Route path="/logement/:id" element={<Logement />} />
 						<Route path="*" element={<Error />} />
-						<Route path ="/error" element={<Error />}/>
-						
+						<Route path ="/error" element={<Error />}/>	
 					</Routes>
-					<Footer />
 				</main>
-				
-			
+			<Footer />
 		</BrowserRouter>
-		
 	);
 }
 

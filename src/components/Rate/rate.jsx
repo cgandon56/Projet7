@@ -1,4 +1,3 @@
-import React from "react";
 import fullstar from "../../images/fullstar.svg";
 import emptystar from "../../images/emptystar.svg";
 
@@ -6,7 +5,7 @@ import emptystar from "../../images/emptystar.svg";
 
 const Rate = ({evaluation}) => {
   const stars =[1, 2, 3, 4, 5]
-  return (
+   return (
     <div className="rating" >
       {stars.map((star) =>
         evaluation >= star ? (
@@ -14,14 +13,15 @@ const Rate = ({evaluation}) => {
             key={star.toString()}
             className="rating_Icon"
             src={fullstar}
-            alt=""
+            alt="grey star"
           />
-        ) : (
+        ) : 
+        (
           <img
             key={star.toString()}
-            className="irting_Icon"
+            className="rating_Icon"
             src={emptystar}
-            alt=""
+            alt="color star"
           />
         )
       )}

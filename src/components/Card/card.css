@@ -12,7 +12,7 @@
     transform: scale(1.05);
 }
 
-.pictureCard{
+.picture_Card{
     border-radius: 10px;
     height: 100%;
     object-fit: cover;
@@ -31,7 +31,7 @@
     margin-left : 10px;
 }
 
-.pictureTitle{
+.picture_Title{
     display: flex;
     align-items: flex-end; 
 }
