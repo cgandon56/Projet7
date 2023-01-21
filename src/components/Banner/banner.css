@@ -4,6 +4,8 @@
   overflow: hidden;
   height:320px;
   position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .Background{

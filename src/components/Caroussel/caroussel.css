@@ -1,6 +1,11 @@
+.carousel-indicators{
+    display : none;
+}
 .carousel{
     height: 415px;
     top : 30px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 img.d-block{
@@ -26,6 +31,18 @@ img.d-block{
     background-image: url(../../images/forward.svg);
     height : 80px;
 }
+
+.caroussel_Number{
+    font-size : 18px;
+    color : white;
+    position : absolute ;
+    display: block;
+    bottom: 20px;
+    font-weight: 500;
+    left: 50%;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); 
+}
+
 
 @media screen and (max-width: 767px) {
     .carousel{

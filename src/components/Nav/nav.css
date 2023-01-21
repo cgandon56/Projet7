@@ -1,8 +1,9 @@
 .nav_Header{  
     display: flex;
     flex-wrap: wrap;
-    gap : 180px;
+    gap : 100px;
     Top : 10px;
+    margin-right : 100px;
 }
 
 .nav_header_link_home{
