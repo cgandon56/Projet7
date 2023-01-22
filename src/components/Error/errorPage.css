@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     color: #FF6060;
+    text-align: center;
 }
 
 .error_Number{
     font-weight: 700;
     font-size: 288px;
-    line-height: 10%;
     margin-top : 50px;
     line-height: 142.6%;
     display: flex;
@@ -18,14 +18,36 @@ a {
     color: #FF6060; 
 }
 
+.error_Text{
+    font-weight: 500 ;
+    font-size: 36px ;
+    line-height : 51.34px ;
+}
+
 .return{
     display: flex;
     align-items: flex-end; 
     font-size: 18px; 
     line-height: 142.6%;
-    margin-top : 100px;
+    margin-top : 80px;
+    margin-bottom : 50px;
 }
 
 .link_Home{
     text-decoration: none;  
+}
+
+@media screen and (max-width: 767px) {
+    .error_Number{
+        font-size: 96px;
+        margin-top: 200px;
+    }
+    .error_Text{
+        font-size: 18px ;
+        line-height : 25.67px;
+    }
+    .return{
+        font-size: 14px; 
+        line-height: 19.96px;
+    }
 }
