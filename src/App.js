@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom"; // pour enveleopper le contenu
 import './styles/index.css';
 import Home from './pages/Home';
 import { Routes, Route } from "react-router-dom";
@@ -10,10 +10,10 @@ import Footer from './components/Footer/footer';
 import Error from './pages/Error';
 
 
- 
+//Fonction pour définir les routes accessibles
 function App() {
-	return (
-		<BrowserRouter>
+	return ( 
+		<BrowserRouter> 
 			<Header />
 				<main>
 					<Routes>
@@ -31,7 +31,5 @@ function App() {
 
 export default App;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 

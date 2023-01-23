@@ -1,22 +1,22 @@
 import React from 'react';
 import Caroussel from '../components/Caroussel/caroussel';
 import Collapse from '../components/Collapse/collapse';
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom"; // pour récupérer les paramètres de route
 import data from '../datas/data' ;
 import Tag from "../components/Tag/tag";
 import Host from "../components/Host/host" ;
 import Rate from "../components/Rate/rate";
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom"; // pour rediriger vers une autre page
 
 
 function Logement(){
-    const { id } = useParams();
-    const lodging = data.find((lodging) => lodging.id === id);
-        if (!lodging) { 
+    const { id } = useParams(); // pour accéder au paramètre id et aux valeurs correspondantes
+    const lodging = data.find((lodging) => lodging.id === id); //pour récupérer les éléments qui correspondent à l'id du logement
+        if (!lodging) { // si l'id n'existe pas, retourner la page erreur
             return <Navigate to="/error" replace />
         }
-    const equipmentsLodging = lodging.equipments.map((equipment, index) => {
-        return <li key={index}>{equipment}</li>
+    const equipmentsLodging = lodging.equipments.map((equipment, index) => { // pour retourner les équipements 
+        return <li key={index}>{equipment}</li> // utilisation de l'index comme clé pour afficher la liste des équipements
     })
     return(
         <>
@@ -26,8 +26,8 @@ function Logement(){
                         <h1 className ="lodging_title">{lodging.title}</h1>
                         <p className ="lodging_location">{lodging.location}</p>
                             <div className="lodging_tags">
-                            {lodging.tags.map((tag, index) => (
-                            <Tag key={index} tag={tag} />
+                            {lodging.tags.map((tag, index) => ( // pour retourner les tags 
+                            <Tag key={index} tag={tag} /> // utlisation de l'index clé pour afficher les tags
                             ))}
                             </div>
                     </div>

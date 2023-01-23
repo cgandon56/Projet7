@@ -12,8 +12,8 @@ function Home (){
         <Banner img = {imgbanner} text = "Chez vous, partout et ailleurs"/>  
           <div className="Gallery">
             <article className="Thumb">
-				      {data.map((appart, id) => (
-					      <Link className="link_Thumb" key= {id} to={`/logement/${appart.id}`}>
+				      {data.map((appart, id) => ( // Pour retourner les logements
+					      <Link className="link_Thumb" key= {id} to={`/logement/${appart.id}`}> 
 							  <Card cover={appart.cover} title={appart.title} />
 						    </Link>
 				))}

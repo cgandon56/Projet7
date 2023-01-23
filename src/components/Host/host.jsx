@@ -1,5 +1,5 @@
 
-function Host(props) {
+function Host(props) { //props pour récupérer les noms et photos
     return (
         <div className = "host">
             <div className = "host_Name">

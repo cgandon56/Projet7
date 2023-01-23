@@ -1,7 +1,7 @@
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from 'react-bootstrap/Accordion'; // récupération accordéo de react-bootstrap
 
 
-function Collapse(props) {
+function Collapse(props) { // props pour récupérer les titres et descriptions
   return (
     <Accordion>
       <Accordion.Item    eventKey="0">
