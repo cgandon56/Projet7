@@ -12,7 +12,7 @@ import { Navigate } from "react-router-dom"; // pour rediriger vers une autre pa
 function Logement(){
     const { id } = useParams(); // pour accéder au paramètre id et aux valeurs correspondantes
     const lodging = data.find((lodging) => lodging.id === id); //pour récupérer les éléments qui correspondent à l'id du logement
-        if (!lodging) { // si l'id n'existe pas, retourner la page erreur
+        if (!lodging) { // si l'id n'existe pas, reririger vers la page erreur
             return <Navigate to="/error" replace />
         }
     const equipmentsLodging = lodging.equipments.map((equipment, index) => { // pour retourner les équipements 
