@@ -3,28 +3,28 @@ import back from "../../images/back.svg" ;
 import forward from "../../images/forward.svg" ;
 
 function Carousel({ figures }) {
-	const [count, setCount] = useState(0); //je définie l'index du premier slide à 0
-	const length = figures.length; // longueur du tableau de slides
+	const [count, setCount] = useState(0); //count variable d'état et setcount fonction de définition, on passe 0 à useState
+	const length = figures.length; 
 
-	function handleNextClick ()  {
-		setCount(count === length - 1 ? 0 : count + 1); // on repart au premier slide quand on arrive au dernier
+	function handleNextClick ()  { //handleClick gestionnaire d'évènements
+		setCount(count === length - 1 ? 0 : count + 1); // retour à la première image après la dernière
 	};
 	function handlePrevClick () {
-		setCount(count === 0 ? length - 1 : count - 1); // on repart au dernier slide quand on est au premier
+		setCount(count === 0 ? length - 1 : count - 1); // retour à la dernière image si on est à la première
 	};
 
 	return (
 		<div className ="carousel_Container">
-			{length > 1 && (
+			{length > 1 && ( // affichage de la flèche suivante si il y a plus de une image
 				<img
-					src={forward} //Affichage des flèches seulement si length > 1
+					src={forward} 
 					alt="forward"
 					onClick={handleNextClick}
 					className="arrow_Forward"
 				/>
         
 			)}
-			{length > 1 && (
+			{length > 1 && ( // affichage de la flèche précédente si il y a plus de une image
 				<img
 					src={back}
 					alt="previous"
@@ -32,13 +32,13 @@ function Carousel({ figures }) {
 					className="arrow_Back"
 				/>
 			)}
-      {length > 1 && (
+      {length > 1 && ( // affichage de l'indicateurs du nombre d'images si il y a plus de une  image
 					<span className="carousel_Number">
             {count + 1}/{length}
           </span>
 			)}
 
-			{figures.map((figure, index) => (
+			{figures.map((figure, index) => ( // pour retourner les images du tableau
 				<div key={index} className={count === index ? "carousel_Actif" : "carousel"}>
 					{index === count && <img src={figure} alt="location" className = "carousel_Img" />}
 				</div>

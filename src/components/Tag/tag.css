@@ -5,7 +5,7 @@
     width : 150px; 
     justify-content: center;
     Height : 25px ;
-    text-align: center;
+    align-items: center;
   }
 
 .tag_Title{
@@ -17,10 +17,10 @@
    @media screen and (max-width: 767px) {
     .tag{
       border-radius: 5px;
-      width : 84px; 
-      Height : 18px ;
+      width : 100px; 
+      Height : 20px ;
     }
     .tag_Title{
-      font-size : 12px;
+      font-size : 10px;
      }
    }
