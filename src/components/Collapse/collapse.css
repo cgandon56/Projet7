@@ -1,35 +1,68 @@
-.accordion-item{
-    background: #F7F7F7;
-    margin-bottom: 20px; 
+.button_Collapse{
+display : flex;
+flex-direction: row;
+Height : 47px ;
+background: #FF6060;
+border-radius: 5px;
+cursor: pointer;
+position: relative;
+
 }
 
-.accordion-body{
-    color :  #FF6060 ;
+
+
+.collapse_Text{
+  color: white; 
+  font-weight : 500 ;
+  font-size : 24px ;
+  Line-height : 34.22px ;
+  margin-left : 10px;
 }
 
-.accordion-button.collapsed {
-    background: #FF6060;
-    color : white;
-    font-size : 24px;
-  }
 
-  .accordion-button:not(.collapsed) {
-    color: white;
-    background-color:  #FF6060;
-    font-size : 24px;
-  }
 
-  .accordion-button:focus {
-    border-color: transparent;
-    outline: 0;
-    box-shadow: none ;
+.collapse_Icon{
+  position : absolute;
+ left : 95%;
+top: 30%;
+Width : 20.06px ;
+Height : 25.86px ;
+
 }
 
-.accordion {
-    --bs-accordion-btn-icon: url(../../images/Vector.svg);
-    --bs-accordion-btn-icon-transform: rotate(-180deg);
-    --bs-accordion-btn-active-icon: url(../../images/Vector.svg);  
+.collapse_Icon:active{
+  transform: rotate(-180deg)
+	
 }
+
+
+
+
+
+
+
+
+.collapse_Open{
+  margin-top : 20px;
+  color: #FF6060;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.6%;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+
+
+.collapse_Content{
+  background: #F7F7F7;
+  margin-top : -20px;
+  border-radius: 5px;
+
+ 
+}
+
 
 @media screen and (max-width: 767px) {
   .accordion-button.collapsed {
