@@ -42,14 +42,15 @@
     margin-bottom: 50px;
     margin-right : 100px;
     margin-left : 100px;
+   
 }
 
 .accordion_Lodging_Description{
-    width : 650px;
+    Width : 582px ;
 }
 
 .accordion_Lodging_Equipments{
-    width : 650px;
+    width : 582px;
     list-style-type:none;
 }
 
@@ -83,6 +84,7 @@
         margin-right: 20px;
         margin-left : 20px;
         flex-direction: column;
+        gap : 40px;
     }
     .accordion_Lodging_Description{
         width : 100%;

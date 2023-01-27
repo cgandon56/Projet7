@@ -1,81 +1,82 @@
-.button_Collapse{
-display : flex;
-flex-direction: row;
-Height : 47px ;
-background: #FF6060;
-border-radius: 5px;
-cursor: pointer;
-position: relative;
+.section_Collapse{
+  background-color: #ff6060;
+  border-radius: 5px;
+  Height : 50px ;
+  display: inline-flex;
+  flex-direction: row;
+  width : 100% ;
+}
 
+.button_Collapse{
+  display : flex;
+  justify-content: flex-end;
+  width : 100%;
+  cursor: pointer;
+  margin-right : 20px;
+  align-items: center;
 }
 
 
-
 .collapse_Text{
-  color: white; 
+  color: #ffffff;
   font-weight : 500 ;
   font-size : 24px ;
   Line-height : 34.22px ;
-  margin-left : 10px;
+  margin-left : 20px;
+  display: flex;
+  align-items: center;
 }
 
 
 
 .collapse_Icon{
-  position : absolute;
- left : 95%;
-top: 30%;
 Width : 20.06px ;
 Height : 25.86px ;
-
 }
 
-.collapse_Icon:active{
-  transform: rotate(-180deg)
-	
+.button_Collapse.true{
+  justify-content: start;
+  transform: rotate(180deg) ;
 }
-
-
-
-
-
-
 
 
 .collapse_Open{
-  margin-top : 20px;
+  margin-top: 20px;
   color: #FF6060;
   font-weight: 400;
   font-size: 24px;
   line-height: 142.6%;
   margin-left: 10px;
   margin-right: 10px;
- 
 }
-
 
 
 .collapse_Content{
   background: #F7F7F7;
-  margin-top : -20px;
+  margin-top: -20px;
   border-radius: 5px;
-
- 
+  width : 100%;
 }
 
 
 @media screen and (max-width: 767px) {
-  .accordion-button.collapsed {
-    height : 30px ;
-    font-size : 13px;
+  .section_Collapse{
+    Height : 30px ;
   }
-  .accordion-button:not(.collapsed) {
-    font-size : 13px;
-    height : 30px ;
+  .collapse_Text{
+    font-size : 13px ;
+    Line-height : 18.54px ;
+    margin-left : 20px;
   }
-  .accordion {
-  --bs-accordion-btn-icon-width: 13px;
-  }
+  .collapse_Icon{
+    Width : 9px ;
+    Height : 15px ;
+    }
+
+  .collapse_Open{
+    font-size: 12px;
+    }
+
 }
 
 
