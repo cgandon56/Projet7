@@ -6,7 +6,7 @@ function ErrorPage() {
             <h1 className = "error_Number">404</h1>
             <h2 className = "error_Text">Oups! La page que vous demandez n'existe pas.</h2>
             <div className = "return">  
-                <Link ClassName ="link_Home" to={`/`}>Retourner sur la page d'accueil</Link>
+                <Link className ="link_Home" to={`/`}>Retourner sur la page d'accueil</Link>
             </div>
         </div>
     )
